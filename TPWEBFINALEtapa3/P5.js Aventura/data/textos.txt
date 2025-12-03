@@ -1,0 +1,20 @@
+1#El emperador de China escucha rumores sobre un ruiseñor cuyo canto es el más hermoso del mundo, por lo que ordena a su mensajero para que lo busquen
+2#El mensajero encuentra al ruiseñor en el bosque. El ave acepta ir al palacio
+3#El emperador escucha cantar al ruiseñor. Queda maravillado
+4#Aparece un regalo: un ruiseñor mecánico, lleno de joyas. El emperador duda
+5#El canto natural emociona a todos, aunque es sencillo. El emperador se siente en paz
+6#El emperador agradece al ruiseñor real, lo deja libre, pero lo invita a volver cuando quiera
+7#Con los años, el emperador envejece y se enferma. Sintiendose solo
+8#La Muerte aparece al lado del emperador.
+9#El ruiseñor mecánico deslumbra: gira, brilla y canta sin cansancio. El emperador queda fascinado
+10#El emperador reemplaza al ruiseñor real por el mecánico. Todos celebran la novedad
+11#El ruiseñor mecánico empieza a fallar: ya no canta como antes. El emperador se entristece
+12#La Muerte aparece al lado del emperador
+13#El ruiseñor real acude al palacio. Su canto puro ahuyenta a la Muerte
+14#El emperador se recupera. Agradece al ruiseñor, que promete volver cuando lo desee
+15#El emperador se aferra al pájaro mecánico. El mecanismo se rompe definitivamente
+16#El emperador muere solo, rodeado de lujos inútiles
+17#El emperador recuerda ambos pájaros
+18#Con serenidad, el emperador sonríe. Acepta la muerte como parte del ciclo.
+19#El emperador cierra los ojos. El ruiseñor canta desde lejos, acompañando su partida.
+20#CREDITOS: Tomas Pianelli 119110/7 y Agustin Nieto 119101/6
