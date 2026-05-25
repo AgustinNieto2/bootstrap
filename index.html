@@ -1,123 +1,208 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>El Pájaro del Ruiseñor</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="estilos.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luzu TV Evento</title>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">El Pájaro del Ruiseñor</a>
+<a href="index.html" class="volver-btn">← Volver</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<div class="container">
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Historia</a></li>
-          <li class="nav-item"><a class="nav-link" href="proceso.html">Proceso</a></li>
-          <li class="nav-item"><a class="nav-link" href="equipo.html">Equipo</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- HEADER -->
+    <header>
+        <img src="Imagenes/logo.png" alt="Luzu TV" class="logo-header">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#info-evento">Info Evento</a>
+            <a href="#conductores">Conductores</a>
+            <a href="#artistas">Artistas</a>
+            <a href="#premios">Premios</a>
+        </nav>
+    </header>
 
-  <header class="text-center d-flex align-items-center"
-    style="height:100vh; background:url('img/imagen_01.png') center/cover no-repeat;">
-    <div class="container">
-      <h1 class="display-3 text-dark hero-title ">El Pájaro del Ruiseñor</h1>
-      <p class="lead text-dark">Una Aventura Gráfica Interactiva basada en el clásico relato oriental</p>
-
-      <div class="d-flex justify-content-center gap-3">
-        <a href="aventuragrafica.html" class="btn btn-primary btn-lg">Aventura Gráfica</a>
-        <a href="juego.html" class="btn btn btn-secondary btn-lg">Jugar Ahora</a>
-      </div>
-    </div>
-  </header>
-
-  <section class="py-5 bg-light p-3 mb-2 bg-black text-white">
-    <div class="container">
-      <h2 id="historia" class="text-center mb-4">Sobre la Historia</h2>
-      <p class="text-center mx-auto" style="max-width:750px;">
-        Cuentan que hace mucho tiempo vivía en un bosque un pequeño ruiseñor de plumas marrones,
-        tan discreto que casi nadie lo notaba. Mientras otros animales se enorgullecían de sus dones
-        el búho de su sabiduría, el ciervo de su elegancia, el pavo real de sus colores el ruiseñor
-        creía no tener nada especial. Durante el día permanecía en silencio, escondido entre las
-        ramas, observando el mundo sin llamar la atención. <br>
-
-        <br>Pero cuando caía la noche y el bosque quedaba en calma, el ruiseñor abría su pecho y
-        comenzaba a cantar. Su voz no era fuerte, pero tenía una pureza que atravesaba la oscuridad
-        como una luz suave. Su canto podía consolar a quienes estaban tristes, calmar a los que
-        tenían miedo y llenar de esperanza incluso a los corazones más cansados. Los animales
-        escuchaban en silencio, asombrados por la belleza que surgía de aquel pájaro tan pequeño y humilde.<br>
-
-        <br>Con el tiempo, nació una leyenda: cuando alguien se siente perdido o sin fuerzas, puede
-        buscar al ruiseñor en la noche, porque su canto no resuelve los problemas, pero recuerda que
-        incluso en los momentos más oscuros siempre existe algo que puede iluminar. El ruiseñor
-        nunca presumió de su voz; seguía siendo sencillo, casi invisible de día. Pero cada noche,
-        su música demostraba que lo más valioso no siempre es lo que se ve, sino lo que nace del corazón.
-      </p>
-    </div>
-  </section>
-
-  <div class="py-5 p-3 mb-2 text-dark">
-    <h2 class="text-center mb-5">Personajes Principales</h2>
-
-    <div class="row g-4">
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/imagen_0.4.jpeg" class="card-img-top" alt="Emperador">
-          <div class="card-body">
-            <h4 class="card-title">El Emperador</h4>
-            <p>Gobernante del vasto imperio. Su sensibilidad hacia lo natural está
-              ocultada por el lujo y el artificio de la corte, hasta que el canto del ruiseñor
-              cambia su vida.</p>
-          </div>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-texto">
+            <h2>
+                Festejamos nuestro aniversario
+                y te invitamos a formar parte
+                del evento más grande de Luzu TV
+            </h2>
+            <img src="Imagenes/obeliscofrente.png" alt="Obelisco">
+            <a href="#formulario" class="btn">Reservar mi Lugar</a>
         </div>
-      </div>
+    </section>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/imagen_14.jpeg" class="card-img-top" alt="Pájaro Ruiseñor">
-          <div class="card-body">
-            <h4 class="card-title">El Ruiseñor</h4>
-            <p>Pájaro de canto incomparable, símbolo de la belleza natural
-              y la autenticidad emocional. Su canción tiene un impacto profundo en el Emperador.</p>
-          </div>
+    <!-- INFO EVENTO -->
+    <section class="evento-seccion" id="info-evento">
+
+        <div class="titulo-seccion-wrapper">
+            <h2 class="titulo-seccion">¿Dónde se desarrolla el evento?</h2>
         </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/imagen_05.jpeg" class="card-img-top" alt="Pájaro Mecánico">
-          <div class="card-body">
-            <h4 class="card-title">El Pájaro Mecánico</h4>
-            <p>Una imitación artificial creada para sustituir al ruiseñor.
-              Representa lo industrial, lo repetitivo y la falta de alma en comparación
-              con lo natural.</p>
-          </div>
+        <div class="evento-card">
+            <div class="evento-contenido">
+                <div class="evento-img">
+                    <img src="Imagenes/Obeliscoevento.png" alt="Obelisco">
+                </div>
+                <div class="evento-info">
+                    <p>El evento se llevará a cabo en la icónica Avenida 9 de Julio, en pleno corazón de Ciudad de Buenos Aires, transformando el espacio público en un punto de encuentro entre el streaming y la gente.</p>
+                    <p>Durante la jornada, Luzu TV llevará su formato dinámico y cercano a un escenario en vivo, donde los conductores interactuarán directamente con el público, generando una experiencia participativa y espontánea.</p>
+                </div>
+            </div>
+            <div class="evento-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167132768406!2d-58.3815704!3d-34.6037389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9c0a38333065%3A0x12e20216227a748f!2sObelisco!5e0!3m2!1ses!2sar!4v1714250000000!5m2!1ses!2sar"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
-      </div>
+    </section>
 
+    <!-- QUIENES PARTICIPAN -->
+    <div class="parte-evento-wrapper">
+        <h2 class="parte-evento">¿Quiénes serán parte del evento?</h2>
     </div>
-  </div>
 
-  <footer class="bg-dark text-light text-center py-3">
-    <p class="m-0">PMIW – TP#Final Etapa 3</p>
-  </footer>
+    <!-- CONDUCTORES -->
+    <section class="seccion-conductores" id="conductores">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="titulo-seccion-wrapper">
+            <h2 class="titulo-seccion">Conductores</h2>
+            <h3 class="subtitulo-seccion">Entre ellos los más destacados, como...</h3>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="imagenes/nico-occhiato.png" alt="Nicolás Occhiato">
+                <h3>Nicolás Occhiato</h3>
+                <h4>Es un conductor, productor y creador de contenido argentino reconocido por ser el fundador de Luzu TV, uno de los canales de streaming más populares del país.</h4>
+            </div>
+            <div class="card">
+                <img src="imagenes/momi-giardina.png" alt="Momi Giardina">
+                <h3>Momi Giardina</h3>
+                <h4>Es una actriz, bailarina, conductora y creadora de contenido argentina reconocida por su carisma y espontaneidad frente a cámara.</h4>
+            </div>
+            <div class="card">
+                <img src="imagenes/Talledo.png" alt="Santiago Talledo">
+                <h3>Santiago Talledo</h3>
+                <h4>Es un actor, cantante y creador de contenido argentino que ganó reconocimiento por su participación en series juveniles y producciones televisivas.</h4>
+            </div>
+            <div class="card">
+                <img src="imagenes/garabal.png" alt="Martín Garabal">
+                <h3>Martín Garabal</h3>
+                <h4>Es un comediante, guionista y conductor argentino reconocido por su estilo de humor irónico y creativo.</h4>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ARTISTAS -->
+    <section class="artistas" id="artistas">
+
+        <div class="titulo-seccion-wrapper">
+            <h2 class="titulo-seccion">Artistas Invitados</h2>
+        </div>
+
+        <div class="cards cards-2">
+            <div class="card">
+                <img src="Imagenes/maria.png" alt="Maria Becerra">
+                <h3>Maria Becerra</h3>
+                <h4>Nacida en Quilmes, se convirtió en una de las artistas argentinas más reconocidas a nivel internacional.</h4>
+            </div>
+            <div class="card">
+                <img src="imagenes/duki.png" alt="Duki">
+                <h3>Duki</h3>
+                <h4>Nacido en Buenos Aires, es uno de los artistas más importantes de la música urbana en Latinoamérica.</h4>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PREMIOS -->
+    <section class="seccion-premios" id="premios">
+
+        <div class="titulo-seccion-wrapper">
+            <h2 class="titulo-seccion">Premios</h2>
+        </div>
+
+        <div class="premios-grid">
+
+            <div class="premio-card">
+                <img src="imagenes/camisetaArg.png" alt="Camiseta Argentina">
+                <h3>Camiseta de Argentina</h3>
+                <p>Camiseta oficial de la Selección Argentina firmada por Messi</p>
+            </div>
+
+            <div class="premio-card">
+                <img src="imagenes/pelota del mundial.png" alt="Pelota del Mundial">
+                <h3>Pelota Oficial del Mundial</h3>
+                <p>Pelota oficial adidas utilizada en el último Mundial de Fútbol</p>
+            </div>
+
+            <div class="premio-card">
+                <img src="imagenes/Mate LUZU TV.png" alt="Mate LuzuTV">
+                <h3>Mate LuzuTV</h3>
+                <p>Mate exclusivo de edición limitada con el logo oficial de Luzu TV</p>
+            </div>
+
+            <div class="premio-card">
+                <img src="imagenes/LLavero LUZU TV.png" alt="Llaveros LuzuTV">
+                <h3>Llaveros LuzuTV</h3>
+                <p>Pack de llaveros coleccionables con los íconos del canal</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="formulario" id="formulario">
+
+        <div class="titulo-seccion-wrapper">
+            <h2 class="titulo-seccion">Registrate para participar</h2>
+        </div>
+
+        <form id="registroForm">
+            <input type="text" id="nombre" placeholder="Nombre y Apellido" required>
+            <input type="email" id="mail" placeholder="Correo Electrónico" required>
+            <button type="submit">Reservar mi Lugar</button>
+        </form>
+
+    </section>
+
+    <!-- MENSAJE FINAL -->
+    <section class="final" id="final">
+        <img src="Imagenes/OK.png" alt="Reserva completada" class="final-img">
+        <h2>¡Gracias por Reservar!</h2>
+         <p>Tu numero de reserva es #001</p>
+        <p>Te Enviaremos los datos y mas informacion sobre el evento</p>
+    </section>
+
+</div>
+
+<script>
+const form = document.getElementById("registroForm");
+const final = document.getElementById("final");
+
+final.style.display = "none";
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    
+    // Obtener el nombre del formulario
+    const nombre = document.getElementById("nombre").value;
+    
+    // Actualizar el mensaje final con el nombre
+    final.querySelector("h2").textContent = "¡Gracias por Reservar " + nombre + "!";
+    
+    final.style.display = "flex";
+    final.scrollIntoView({ behavior: "smooth" });
+});
+</script>
+
 </body>
-
 </html>

@@ -1,0 +1,496 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    background: #1f1f1f;
+    overflow-x: hidden;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background:
+        linear-gradient(135deg, #ff5c70 0 15%, transparent 15%),
+        linear-gradient(225deg, #f5ea00 0 15%, transparent 15%),
+        linear-gradient(45deg, #42d9d0 0 15%, transparent 15%),
+        linear-gradient(315deg, #e7bfe7 0 15%, transparent 15%);
+    background-color: #2d2d2d;
+    border-radius: 30px;
+    padding: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header {
+    height: 80px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    background: #111;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #3b0000;
+}
+
+/* VOLVER */
+.volver-btn {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.volver-btn:hover {
+    background: #3b0000;
+}
+
+/* =====================
+   TÍTULO DE SECCIÓN
+   ===================== */
+.titulo-seccion-wrapper {
+    margin-bottom: 30px;
+}
+
+.titulo-seccion {
+    display: inline-block;
+    background-color: #1a1a2e;
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 12px 30px;
+    border-radius: 12px;
+    border-left: 8px solid #42d9d0;
+}
+
+.subtitulo-seccion {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 10px;
+}
+
+/* QUIENES PARTICIPAN */
+.parte-evento-wrapper {
+    text-align: center;
+}
+
+.parte-evento {
+    display: inline-block;
+    background-color: #1a1a2e;
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 12px 30px;
+    border-radius: 12px;
+    border-left: 8px solid #f5ea00;
+    border-right: 8px solid #f5ea00;
+}
+
+/* HERO */
+.hero {
+    background: #ece9e2;
+    border-radius: 40px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    margin: 0 auto 40px auto;
+    max-width: 200px;
+    height: auto;
+}
+
+.hero h2 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background: #3b0000;
+    color: white;
+    text-decoration: none;
+    padding: 25px 50px;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 60px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #5a0000;
+}
+
+/* INFO EVENTO */
+.evento-seccion {
+    background: transparent;
+}
+
+.evento-card {
+    background: #ece9e2;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.evento-contenido {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.evento-img {
+    width: 350px;
+    flex-shrink: 0;
+}
+
+.evento-img img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+.evento-info p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.evento-mapa {
+    margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* CONDUCTORES */
+.seccion-conductores {
+    background: transparent;
+}
+
+/* ARTISTAS */
+.artistas {
+    background: #ece9e2;
+    border-radius: 40px;
+    padding: 50px;
+}
+
+/* CARDS GRID */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.cards-2 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+}
+
+.card {
+    background: #ece9e2;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* =====================
+   PREMIOS
+   ===================== */
+.seccion-premios {
+    background: transparent;
+}
+
+.premios-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.premio-card {
+    background: #ece9e2;
+    border-radius: 25px;
+    padding: 35px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.2s;
+}
+
+.premio-card:hover {
+    transform: translateY(-6px);
+}
+
+.premio-card img {
+    width: 60%;
+    max-height: 180px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.premio-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.premio-card p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* FORMULARIO */
+.formulario {
+    background: #ece9e2;
+    border-radius: 40px;
+    padding: 60px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    padding: 20px;
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+}
+
+button {
+    background: #3b0000;
+    color: white;
+    border: none;
+    padding: 22px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5a0000;
+}
+
+/* FINAL */
+.final {
+    background: #ece9e2;
+    border-radius: 40px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.final-img {
+    width: 140px;
+    height: auto;
+    background: transparent;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.final h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.final p {
+    font-size: 30px;
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media (max-width: 1100px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .premios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .evento-contenido {
+        flex-direction: column;
+    }
+
+    .evento-img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 20px;
+        gap: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .btn {
+        font-size: 22px;
+        padding: 18px 30px;
+    }
+
+    .titulo-seccion {
+        font-size: 26px;
+        padding: 10px 18px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-2 {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .premios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .artistas {
+        padding: 30px 20px;
+    }
+
+    .formulario {
+        padding: 40px 20px;
+    }
+
+    .final h2 {
+        font-size: 36px;
+    }
+
+    .final p {
+        font-size: 20px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
