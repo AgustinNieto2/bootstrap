@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Real o IA?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== PANTALLA 1: LANDING ===================== -->
+<section id="screen-landing" class="screen active">
+  <div class="bg-face"></div>
+  <div class="landing-content">
+    <p class="landing-eyebrow">Generación de videos con IA</p>
+    <h1>¿REAL<br><span>O <strong>IA?</strong></span></h1>
+    <p class="subtitle">¿Cómo la IA transforma la producción publicitaria y qué sucede cuando el contenido generado parece real?</p>
+    <button class="btn-primary" id="btn-comenzar">COMENZAR LA EXPERIENCIA</button>
+  </div>
+  <button class="landing-callout landing-callout-top" id="btn-generacion-landing">Generación de videos con IA</button>
+  <button class="landing-callout landing-callout-bottom" id="btn-impacto-landing">Impacto y Realismo<br>en las redes</button>
+</section>
+
+<!-- ===================== PANTALLA 2: HUB "¿REAL O IA?" ===================== -->
+<section id="screen-hub" class="screen">
+  <div class="bg-face"></div>
+  <div class="hub-content">
+    <button class="btn-back" id="hub-back">VOLVER ATRÁS</button>
+    <header class="hub-header">
+      <h2>¿Real o <span>IA?</span></h2>
+      <p>Analizá las claves de la creación de contenido sintético y su efecto en el mercado actual.</p>
+    </header>
+
+    <div class="hub-grid">
+      <button class="hub-card" data-target="screen-produccion">
+        <div class="hub-card-thumb thumb-produccion" aria-label="Núcleo de generación de videos"></div>
+        <span class="hub-card-label">Generación de videos con IA</span>
+      </button>
+
+      <button class="hub-card" data-target="screen-impacto">
+        <div class="hub-card-thumb thumb-impacto" aria-label="Núcleo de impacto y realismo"></div>
+        <span class="hub-card-label">Impacto y Realismo en las redes</span>
+      </button>
+    </div>
+
+    <div class="hub-robot" aria-hidden="true">
+      <img src="robot/robot.png" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SUBMENÚ: PRODUCCIÓN ===================== -->
+<section id="screen-produccion" class="screen">
+  <div class="bg-face"></div>
+  <div class="panel production-panel">
+    <button class="btn-back" id="production-back" data-back="screen-hub">VOLVER ATRÁS</button>
+    <button class="btn-close" data-back="screen-hub">&times;</button>
+    <h2 class="panel-title">Generación de videos con IA</h2>
+    <p class="panel-question">¿Cómo una idea publicitaria puede convertirse en una pieza visual mediante IA?</p>
+
+    <div class="submenu-grid">
+      <div class="submenu-card production-card production-card-small" role="button" tabindex="0" data-target="screen-que-genera-ia">
+        <div class="submenu-thumb thumb-genera"></div>
+        <span>¿Qué puede<br>generar la IA?<br>Tareas que acelera la IA</span>
+        <button class="info-trigger" type="button" data-info="genera">Ver datos</button>
+      </div>
+      <div class="submenu-card production-card production-card-featured" role="button" tabindex="0" data-target="screen-proceso-generacion">
+        <div class="submenu-thumb thumb-proceso"></div>
+        <span>Proceso de generación<br>de contenido con IA</span>
+        <button class="info-trigger" type="button" data-info="proceso">Ver datos</button>
+      </div>
+      <div class="submenu-card production-card production-card-small" role="button" tabindex="0" data-target="screen-herramientas">
+        <div class="submenu-thumb thumb-herramientas"></div>
+        <span>Herramientas<br>de la IA</span>
+        <button class="info-trigger" type="button" data-info="herramientas">Ver datos</button>
+      </div>
+    </div>
+
+    <div class="production-arrows">
+      <button class="production-arrow" id="production-prev" type="button" aria-label="Pantalla anterior">&larr;</button>
+      <button class="production-arrow" id="production-next" type="button" aria-label="Siguiente pantalla">&rarr;</button>
+    </div>
+    <button class="trivia-launch" type="button" data-trivia-open>Ir a la trivia <span>&rarr;</span></button>
+    <p class="trivia-lock-message hidden">Recorré también el núcleo de Impacto para desbloquear la trivia.</p>
+    <img class="production-robot" src="robot/robot.png" alt="">
+  </div>
+</section>
+
+<!-- ---- Contenido: IA en Marketing Digital ---- -->
+<section id="screen-marketing-digital" class="screen">
+  <div class="bg-face"></div>
+  <div class="panel">
+    <button class="btn-back" data-back="screen-produccion">VOLVER ATRÁS</button>
+    <button class="btn-close" data-back="screen-hub">&times;</button>
+
+    <div class="two-col">
+      <div class="col">
+        <h3>¿Qué es la IA en el marketing digital?</h3>
+        <p class="col-question">La IA permite varias cosas en el marketing:</p>
+
+        <div class="icon-row">
+          <button class="icon-item" data-tooltip="Automatizar tareas: agiliza procesos repetitivos de campañas y contenido.">
+            <div class="icon-circle">👤</div>
+            <span>Automatizar tareas</span>
+          </button>
+          <button class="icon-item" data-tooltip="Crear contenido: genera piezas visuales y textos de forma asistida.">
+            <div class="icon-circle">💻</div>
+            <span>Crear contenido</span>
+          </button>
+          <button class="icon-item" data-tooltip="Optimizar campañas publicitarias: ajusta segmentación y resultados en base a datos.">
+            <div class="icon-circle">⚙️</div>
+            <span>Optimizar campañas publicitarias</span>
+          </button>
+        </div>
+
+        <p class="source-note">Fuente: Venngage, AI in Digital Marketing.<br>Fuente: Simpli.fi, How AI-Generated Ads Are Changing the Future of Digital Advertising.</p>
+      </div>
+
+      <div class="col">
+        <h3>Empresas usando IA en el Marketing Digital</h3>
+        <p class="col-question">¿Las empresas de marketing utilizan IA para sus videos?</p>
+        <div class="chart-placeholder">
+          <!-- TODO: reemplazar por gráfico real (Chart.js / SVG) con los valores de la fuente -->
+          <svg viewBox="0 0 300 120" class="line-chart">
+            <polyline points="10,100 90,70 190,40 290,15" fill="none" stroke="#e6299e" stroke-width="3"/>
+            <circle cx="10" cy="100" r="4" fill="#e6299e"/>
+            <circle cx="90" cy="70" r="4" fill="#e6299e"/>
+            <circle cx="190" cy="40" r="4" fill="#e6299e"/>
+            <circle cx="290" cy="15" r="4" fill="#e6299e"/>
+          </svg>
+        </div>
+        <p class="source-note">Fuente: Wyzowl, Video Marketing Statistics 2026.<br>Fuente: SurveyMonkey — Estadísticas sobre inteligencia artificial en marketing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Contenido: Producción tradicional VS IA ---- -->
+<section id="screen-tradicional-vs-ia" class="screen">
+  <div class="bg-face"></div>
+  <div class="panel">
+    <button class="btn-back" data-back="screen-produccion">VOLVER ATRÁS</button>
+    <button class="btn-close" data-back="screen-hub">&times;</button>
+
+    <h3>Producción tradicional VS IA</h3>
+    <p class="col-question">¿Cómo se genera contenido publicitario con IA?</p>
+
+    <div class="compare-row">
+      <span class="compare-label">Producción tradicional</span>
+    </div>
+    <div class="pill-row">
+      <button class="pill" data-tooltip="Objetivo: Realizar una tarea específica.">OBJETIVO</button>
+      <button class="pill" data-tooltip="Proceso: Se siguen las reglas y decisiones humanas.">PROCESO</button>
+      <button class="pill" data-tooltip="Resultado: (completar con la info de Figma)">RESULTADO</button>
+      <button class="pill" data-tooltip="Producción: Análisis, clasificación, predicciones y creación manual.">PRODUCCIÓN</button>
+    </div>
+
+    <div class="compare-row">
+      <span class="compare-label">Producción IA</span>
+    </div>
+    <div class="pill-row">
+      <button class="pill" data-tooltip="Objetivo: (completar con la info de Figma)">OBJETIVO</button>
+      <button class="pill" data-tooltip="Proceso: Aprende patrones de grandes conjuntos de datos.">PROCESO</button>
+      <button class="pill" data-tooltip="Resultado: (completar con la info de Figma)">RESULTADO</button>
+      <button class="pill" data-tooltip="Producción: (completar con la info de Figma)">PRODUCCIÓN</button>
+      <button class="pill" data-tooltip="Humano: (completar con la info de Figma)">HUMANO</button>
+    </div>
+
+    <p class="source-note">Fuente: Zendesk — Guía de IA generativa: qué es, usos, tipos y más.</p>
+  </div>
+</section>
+
+<!-- ---- Stubs: completar cuando tengamos el detalle de Figma ---- -->
+<section id="screen-proceso-generacion" class="screen">
+  <div class="bg-face"></div>
+  <div class="panel">
+    <button class="btn-back" data-back="screen-produccion">VOLVER ATRÁS</button>
+    <button class="btn-close" data-back="screen-hub">&times;</button>
+    <h3>Proceso de generación de contenido con IA</h3>
+    <p class="col-question">TODO: contenido pendiente — no vi el detalle de esta pantalla en el video, pasame las capturas o el timestamp y la completo.</p>
+  </div>
+</section>
+
+<section id="screen-que-genera-ia" class="screen">
+  <div class="bg-face"></div>
+  <div class="panel">
+    <button class="btn-back" data-back="screen-produccion">VOLVER ATRÁS</button>
+    <button class="btn-close" data-back="screen-hub">&times;</button>
+    <h3>¿Qué puede generar la IA? y Tareas que acelera la IA</h3>
+    <p class="col-question">TODO: contenido pendiente — mismo caso que la anterior.</p>
+  </div>
+</section>
+
+<!-- ===================== HERRAMIENTAS ===================== -->
+<section id="screen-herramientas" class="screen">
+  <div class="bg-face"></div>
+  <div class="panel">
+    <button class="btn-close" data-back="screen-hub">&times;</button>
+    <h2 class="panel-title">Herramientas</h2>
+    <p class="panel-question">Hemos encontrado que en algunos blogs empresariales como ONLYOFICCE y BCG utilizan diferentes tipos de IA para la generación de contenido con IA.</p>
+
+    <div class="tools-row">
+      <button class="tool-item" data-tooltip="Genera guiones, copys y textos publicitarios asistidos por IA.">
+        <div class="tool-icon">📝</div>
+        <span>GENERACIÓN DE TEXTO</span>
+      </button>
+      <button class="tool-item" data-tooltip="Herramientas como Canva IA o Adobe Firefly para piezas gráficas simples.">
+        <div class="tool-icon">🖼️</div>
+        <span>GENERACIÓN DE IMÁGENES</span>
+      </button>
+      <button class="tool-item" data-tooltip="Adobe Firefly · Midjourney · DALL·E → Crea imágenes y piezas visuales para campañas.">
+        <div class="tool-icon">🎨</div>
+        <span>GENERACIÓN DE IMÁGENES</span>
+      </button>
+      <button class="tool-item" data-tooltip="Clonación y síntesis de voz para locuciones publicitarias.">
+        <div class="tool-icon">🎙️</div>
+        <span>GENERACIÓN DE VOZ</span>
+      </button>
+      <button class="tool-item" data-tooltip="Analiza resultados de campañas y sugiere optimizaciones.">
+        <div class="tool-icon">📊</div>
+        <span>ANÁLISIS Y OPTIMIZACIÓN</span>
+      </button>
+      <button class="tool-item" data-tooltip="Adaptación automática de piezas para cada red social.">
+        <div class="tool-icon">📘</div>
+        <span>REDES SOCIALES</span>
+      </button>
+    </div>
+
+    <h4 class="stats-title">Adopción de software generativo</h4>
+    <p class="col-question">Las agencias globales están integrando modelos generativos en sus flujos diarios.</p>
+
+    <div class="stat-bar">
+      <div class="stat-bar-label"><span>Agencias que usan Midjourney / Stable Diffusion</span><strong>82%</strong></div>
+      <div class="stat-bar-track"><div class="stat-bar-fill" style="width:82%"></div></div>
+    </div>
+    <div class="stat-bar">
+      <div class="stat-bar-label"><span>Campañas con copy asistido por CHATGPT/CLAUDE</span><strong>65%</strong></div>
+      <div class="stat-bar-track"><div class="stat-bar-fill" style="width:65%"></div></div>
+    </div>
+
+    <div class="stat-highlight">
+      <strong>+300%</strong>
+      <span>De incremento en herramientas de IA implementadas en 2024</span>
+    </div>
+  </div>
+</section>
+<!-- ===================== SUBMENÚ: IMPACTO ===================== -->
+<section id="screen-impacto" class="screen">
+  <div class="bg-face"></div>
+  <div class="panel production-panel impact-panel">
+    <div class="impact-top-actions">
+      <button class="btn-back" id="impact-back" data-back="screen-hub" aria-label="Volver atrás">&lsaquo;</button>
+      <button class="impact-sources" type="button">▤<span>Fuentes</span></button>
+    </div>
+    <button class="btn-close" data-back="screen-hub">&times;</button>
+    <h2 class="panel-title">Impacto y Realismo en las redes</h2>
+    <p class="panel-question">¿Qué sucede cuando una publicidad parece real, pero fue creada con IA?</p>
+
+    <div class="submenu-grid impact-grid">
+      <div class="submenu-card production-card impact-card impact-card-small zoom-trigger" role="button" tabindex="0" data-target="screen-impacto-consumidor">
+        <div class="submenu-thumb thumb-consumidor"></div>
+        <span>Impacto en el<br>consumidor</span>
+        <button class="info-trigger" type="button" data-info="impacto">Ver datos</button>
+      </div>
+      <div class="production-card impact-card production-card-featured impact-card-featured">
+        <img class="submenu-thumb thumb-real-ia" src="images tools/real o IA.jpg" alt="Real o IA">
+        <span>¿Real o IA?<br>¿Por qué puede<br>engañarnos?</span>
+        <button class="info-trigger" type="button" data-info="realismo">Ver datos</button>
+      </div>
+      <div class="production-card impact-card impact-card-small">
+        <div class="submenu-thumb thumb-casos"></div>
+        <span>¿Qué pasa cuando una<br>marca genera algo que<br>nunca existió?<br>Casos reales</span>
+        <button class="info-trigger" type="button" data-info="casos">Ver datos</button>
+      </div>
+    </div>
+
+    <div class="production-arrows" aria-hidden="true">
+      <span class="production-arrow">&larr;</span>
+      <span class="production-arrow">&rarr;</span>
+    </div>
+    <button class="trivia-launch" type="button" data-trivia-open>Ir a la trivia <span>&rarr;</span></button>
+    <p class="trivia-lock-message hidden">Recorré también el núcleo de Generación para desbloquear la trivia.</p>
+    <img class="production-robot" src="robot/robot.png" alt="">
+  </div>
+</section>
+
+<section id="screen-register" class="screen">
+  <div class="bg-face"></div>
+  <div class="trivia-panel register-panel">
+    <button class="btn-back" id="register-back" type="button">VOLVER ATRÁS</button>
+    <h2 class="panel-title">Antes de empezar</h2>
+    <p class="panel-question">Completaste los dos núcleos. Ingresá tu nombre para comenzar la trivia.</p>
+    <form id="register-form" class="register-form">
+      <label for="register-name">Tu nombre</label>
+      <input id="register-name" type="text" autocomplete="name" placeholder="Escribí tu nombre" required>
+      <p id="register-error" class="register-error hidden">Ingresá tu nombre para continuar.</p>
+      <button class="trivia-launch" type="submit">Comenzar trivia <span>&rarr;</span></button>
+    </form>
+  </div>
+</section>
+
+<section id="screen-trivia" class="screen">
+  <div class="bg-face"></div>
+  <div class="trivia-panel">
+    <button class="btn-back" id="trivia-back" type="button">VOLVER ATRÁS</button>
+    <h2 class="panel-title">Trivia: ¿Real o IA?</h2>
+    <p class="panel-question">Poné a prueba tu capacidad para reconocer contenido generado con IA.</p>
+    <div id="trivia-question-view">
+      <div class="trivia-status">
+        <p class="trivia-progress" id="trivia-progress"></p>
+        <p class="trivia-timer">Tiempo: <strong id="trivia-time">10</strong>s</p>
+      </div>
+      <div class="trivia-question-box">
+        <h3 id="trivia-question"></h3>
+        <div class="trivia-media" id="trivia-media">
+          <img id="trivia-image" src="" alt="Contenido de la pregunta">
+          <video id="trivia-video" controls playsinline></video>
+        </div>
+        <div class="trivia-options">
+          <button type="button" data-answer="ia">Es IA</button>
+          <button type="button" data-answer="real">Es real</button>
+        </div>
+      </div>
+    </div>
+    <div id="trivia-result-view" class="hidden">
+      <h3>Resultado</h3>
+      <p>Acertaste <strong id="trivia-score">0</strong> de 3 preguntas.</p>
+      <div class="trivia-chart" aria-label="Gráfico de resultado"><span id="trivia-chart-label">0%</span></div>
+      <button class="trivia-launch" type="button" data-trivia-open>Jugar otra vez <span>&rarr;</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Contenido: Impacto en el consumidor ---- -->
+<section id="screen-impacto-consumidor" class="screen">
+  <div class="bg-face"></div>
+  <div class="panel">
+    <button class="btn-back">VOLVER ATRÁS</button>
+    <button class="btn-close" data-back="screen-hub">&times;</button>
+
+    <h2 class="panel-title">IMPACTO EN EL CONSUMIDOR</h2>
+    <p class="panel-question">¿Qué pasa cuando una publicidad parece real, pero fue creada con IA?</p>
+
+    <div class="venn-wrap">
+      <button class="venn-circle venn-c"
+              data-title="Confianza"
+              data-text="La IA puede reducir la confianza del consumidor cuando descubre que un contenido publicitario fue generado artificialmente en lugar de producido de forma tradicional.">CONFIANZA</button>
+      <button class="venn-circle venn-a"
+              data-title="Autenticidad"
+              data-text="La IA puede afectar la percepción de autenticidad de una marca al generar contenido que parece real pero no fue creado de la manera que el consumidor asume.">AUTENTICIDAD</button>
+      <button class="venn-circle venn-dif"
+              data-title="Dificultad de reconocimiento"
+              data-text="Puede ser difícil distinguir contenido real de contenido generado por IA, lo que genera confusión e incertidumbre en el consumidor.">DIFICULTAD<br>DE RECONOCIMIENTO</button>
+    </div>
+    <p class="venn-hint">Pasá el mouse por cada círculo para ver el detalle.</p>
+
+    <p class="impact-note">Revelar el uso de IA no siempre genera una reacción positiva: en ciertos anuncios puede disminuir la confianza y la actitud hacia la publicidad.</p>
+    <p class="source-note">Fuente: Taylor &amp; Francis, The effects of disclosing AI-generated advertising on consumer responses.</p>
+  </div>
+</section>
+
+<!-- Tooltip flotante compartido (íconos y pills) -->
+<div id="tooltip-box" class="tooltip-box hidden"></div>
+
+<div id="data-modal" class="data-modal hidden">
+  <div class="data-modal-card">
+    <button class="data-modal-close" type="button" aria-label="Cerrar">&times;</button>
+    <span id="data-category" class="data-category"></span>
+    <h2 id="data-title"></h2>
+    <p id="data-description"></p>
+    <div id="data-stats" class="data-stats"></div>
+    <div class="data-metric"><strong id="data-metric-number"></strong><span id="data-metric-text"></span></div>
+  </div>
+</div>
+
+<!-- Modal centrado con blur, exclusivo para el diagrama de Venn de Impacto en el consumidor -->
+<div id="venn-modal-overlay" class="venn-modal-overlay hidden">
+  <div class="venn-modal">
+    <button class="venn-modal-close" id="venn-modal-close">&times;</button>
+    <h3 id="venn-modal-title"></h3>
+    <p id="venn-modal-text"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
